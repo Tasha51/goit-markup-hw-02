@@ -1,0 +1,115 @@
+/* основной цвет текста #212121 */
+/* вторичный цвет текста #757575 */
+/* цвет фона #FFFFFF */
+/* вторичный цвет #2F303A */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+}
+/* Общее */
+.page {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+}
+.link {
+  text-decoration: none;
+}
+.item {
+  list-style-type: none;
+}
+/* Лого */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--primary-text-color);
+}
+.logo-span {
+  color: var(--accent-color);
+}
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+/* Навигация */
+
+.nav-link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+/* Контакты */
+.contacts-link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+/* Герой */
+.hero {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 600px;
+}
+.hero-title {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.36;
+}
+.hero-btn {
+  background-color: #2196f3;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  width: 200px;
+  height: 50px;
+}
+/* Секция Особенности  */
+/* Паттерн для скрытия заголовка */
+.features-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.features-subtitle {
+  font-weight: 700;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+}
+.features-text {
+  color: var(--secondary-text-color);
+  line-height: 1.7;
+}
+/* Секция Наша работа и Наша команда*/
+.working-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+.team-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+}
+.team-text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+}
