@@ -3,6 +3,7 @@
 /* цвет фона #FFFFFF */
 /* вторичный цвет #2F303A */
 :root {
+  --main-font-family: 'Roboto', sans-serif;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
@@ -11,7 +12,8 @@
 .page {
   background-color: #ffffff;
   color: var(--primary-text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font-family);
+  font-size: 14px;
 }
 .link {
   text-decoration: none;
@@ -26,12 +28,13 @@
   font-size: 26px;
   color: var(--primary-text-color);
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 .logo > .link {
   color: var(--accent-color);
 }
-.logo:hover,
-.logo:focus {
+.nav .logo:hover,
+.nav .logo:focus {
   color: var(--accent-color);
 }
 /* Навигация */
@@ -40,19 +43,21 @@
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
 }
 /* Контакты */
-.contacts-link {
+.header-contacts-link {
   color: var(--secondary-text-color);
   font-weight: 500;
   line-height: 1.14;
+  letter-spacing: 0.02em;
 }
-.contacts-link:hover,
-.contacts-link:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: var(--accent-color);
 }
 /* Герой */
@@ -66,21 +71,28 @@
   text-transform: uppercase;
   text-align: center;
   line-height: 1.36;
+  letter-spacing: 0.06em;
 }
 .hero-btn {
-  background-color: #2196f3;
+  font-family: var(--main-font-family);
+  background-color: var(--accent-color);
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-align: center;
-  letter-spacing: 0.96px;
+  letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
 }
-/* Секция Особенности  */
+.hero-btn:hover,
+.hero-btn:focus {
+  cursor: pointer;
+}
+
 /* Паттерн для скрытия заголовка */
-.features-title {
+.features-title,
+.services-title {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -92,32 +104,43 @@
   clip-path: inset(50%);
   margin: -1px;
 }
+/* Секция Особенности  */
 .features-subtitle {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 .features-text {
   color: var(--secondary-text-color);
   line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 /* Секция Наша работа и Наша команда*/
-.working-title,
+.team {
+  background-color: #f5f4fa;
+}
+.work-title,
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 .team-subtitle {
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 .team-text {
   color: var(--secondary-text-color);
+  font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 /* Футер */
 .footer-contacts {
@@ -127,18 +150,54 @@
   color: #ffffff;
 }
 
-.logo:hover,
-.logo:focus {
+.footer-contacts .logo:hover,
+.footer-contacts .logo:focus {
   color: var(--accent-color);
 }
 .address {
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-}
-.footer-contacts .contacts-link {
-  font-size: 14px;
+  letter-spacing: 0.03em;
   font-weight: 400;
+}
+.footer-contacts-link {
+  color: rgba(255, 255, 255, 0.6);
   line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+  color: var(--accent-color);
+}
+/* Портфолио */
+.filter-btn {
+  font-family: var(--main-font-family);
+  background-color: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-align: center;
+  width: fit-content;
+  height: 38px;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  cursor: pointer;
+}
+.services-subtitle {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.services-text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.89;
+  letter-spacing: 0.03em;
 }
